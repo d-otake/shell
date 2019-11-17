@@ -1,6 +1,6 @@
 
 #!/bin/bash
-FileName="input1.txt"
+FileName="input.txt"
 
 # 外部ファイル読み込み
 # str1=$(<input1.txt)
