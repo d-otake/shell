@@ -16,7 +16,7 @@ today=$(date +'%M' | cut -c 1)
 # echo ${str2}
 
 # 偶数の場合足し算、奇数の場合掛け算をおこなう
-if [ ${today}%2 = 0 ]; then
+if [ $((${today} % 2)) == 0 ]; then
   echo $(date +'%Y/%m/%d %H:%M:%S') $((${str1} + ${str2})) >> result.log
 else
   echo $(date +'%Y/%m/%d %H:%M:%S') $((${str1} * ${str2})) >> result.log
