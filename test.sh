@@ -3,7 +3,7 @@
 
 # 外部ファイル読み込み
 str1=$(<input1.txt)
-str2=$(<input2.txt)
+str2=$(<input1.txt)
 
 # 分の10の位を取得する
 today=$(date +'%M' | cut -c 1)
